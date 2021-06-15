@@ -1,0 +1,7 @@
+{
+  "name": "ionic-projet-dossier-professionnel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
