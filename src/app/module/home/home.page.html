@@ -1,13 +1,36 @@
-<app-header [title]="title"></app-header>
+<app-header [title]="pageTitle"></app-header>
 
-<ion-content  >
-
+<ion-content>
   <div class="container">
     <div id="home-main-text">
-       Bienvenue sur notre plateforme ! 
-       Vous pourrez voir ici tous les informations concernant
-       vos films et series préférées
+      <p> Bienvenue sur notre plateforme !
+
+        Vous pourrez voir ici tous les informations concernant
+        vos films et series préférées</p>
     </div>
-  </div> 
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias consequuntur, illo tempore ipsam ullam. Explicabo repellendus eaque unde, odit aliquid corporis? Veniam soluta voluptate unde quidem libero! Nisi, voluptate praesentium eum accusantium est sint molestiae earum debitis qui? Ipsam cumque sed magnam atque quas corporis, odio consequatur sit id.</p>
+  </div>
+  <h2 class="home-title"> Top films du moment</h2>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{mostPopularMovies[0].title}}</ion-card-title>
+      </ion-card-header>
+      <ion-img [src]="mostPopularMovies[0].moviePictureUrl"></ion-img>
+
+      <ion-card-content>
+        {{mostPopularMovies[0].description}}
+      </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
+  <h2 class="home-title">Top series du moment</h2>
+
+
 </ion-content>

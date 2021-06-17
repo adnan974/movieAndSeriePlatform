@@ -6,6 +6,9 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { HeaderComponent } from 'src/app/shared/components/header/header.component';
+import { SharedModuleModule } from 'src/app/shared/shared-module.module';
+import { MovieService } from 'src/app/core/services/movie.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -13,8 +16,11 @@ import { HeaderComponent } from 'src/app/shared/components/header/header.compone
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    SharedModuleModule,
+    HttpClientModule
   ],
-  declarations: [HomePage,HeaderComponent]
+  declarations: [HomePage],
+  providers:[MovieService]
 })
 export class HomePageModule {}

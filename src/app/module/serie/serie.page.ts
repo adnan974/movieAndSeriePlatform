@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./serie.page.scss'],
 })
 export class SeriePage implements OnInit {
+  
+  public pageTitle:string = "Films"
 
   constructor() { }
 

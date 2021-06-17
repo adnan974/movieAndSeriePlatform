@@ -1,15 +1,19 @@
 .container {
-  background-image: url("../../../assets/images/home_main_picture-min.jpg");
-  
+  background-image: url("../../../assets/images/home_main_picture_4.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: grayscale(50%);
   height: 100%;
-  padding-top: 50%;
+  padding-top: 30%;
+  
 }
 
 #home-main-text {
   color: white;
-  font-size: 26px;
+  font-size: 25px;
   font-weight: 800;
   text-align: center;
+  text-shadow: 2px 2px black;
   
   // position: absolute;
   // top: 50%;

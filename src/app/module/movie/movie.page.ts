@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviePage implements OnInit {
 
+  public pageTitle:string = "Films"
   constructor() { }
 
   ngOnInit() {
